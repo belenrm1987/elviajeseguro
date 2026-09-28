@@ -1,0 +1,20 @@
+---
+import { hasContent, type Node } from '../lib/site';
+const { title, items, current } = Astro.props as { title: string; items: Node[]; current?: string };
+---
+{items.length > 0 && (
+  <nav class="plan" aria-label={title}>
+    <h2>{title}</h2>
+    <ul>
+      {items.map((n) => (
+        <li>
+          {n.url === current ? (
+            <span aria-current="page">{n.name}</span>
+          ) : (
+            <a href={n.url}>{n.name}{!hasContent(n.url) && <span class="soon"> · pronto</span>}</a>
+          )}
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

@@ -1,0 +1,9 @@
+---
+const { facts, title = 'Ficha clara' } = Astro.props as { facts: { label: string; value: string }[]; title?: string };
+---
+{facts?.length > 0 && (
+  <section class="facts" aria-label={title}>
+    <h2>{title}</h2>
+    <dl>{facts.map((f) => <div><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl>
+  </section>
+)}

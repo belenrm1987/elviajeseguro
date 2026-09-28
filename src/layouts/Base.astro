@@ -1,0 +1,84 @@
+---
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource/source-serif-4/400.css';
+import '@fontsource/source-serif-4/400-italic.css';
+import '@fontsource/source-serif-4/600.css';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../lib/site';
+
+import type { OgImage } from '../lib/og';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  noindex?: boolean;
+  graph?: object;
+  ogType?: 'website' | 'article';
+  image: OgImage;
+  published?: string;
+  modified?: string;
+  section?: string;
+  seoTitle?: string;
+}
+const { title, description, path, noindex = false, graph, ogType = 'website', image, published, modified, section, seoTitle } = Astro.props;
+const canonical = new URL(path, SITE.url).href;
+// Título SEO: se añade la marca solo si cabe en ~60 caracteres (lo que Google suele mostrar).
+const baseTitle = seoTitle ?? title;
+const withBrand = `${baseTitle} | ${SITE.name}`;
+const fullTitle = path === '/' ? title : withBrand.length <= 60 ? withBrand : baseTitle;
+const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image.url} />
+    <meta property="og:image:width" content={String(image.width)} />
+    <meta property="og:image:height" content={String(image.height)} />
+    <meta property="og:image:alt" content={image.alt} />
+    {ogType === 'article' && published && <meta property="article:published_time" content={published} />}
+    {ogType === 'article' && modified && <meta property="article:modified_time" content={modified} />}
+    {ogType === 'article' && section && <meta property="article:section" content={section} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image.url} />
+    <meta name="twitter:image:alt" content={image.alt} />
+
+    <meta name="theme-color" content="#13262f" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    {graph && <script type="application/ld+json" set:html={JSON.stringify(graph)} />}
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <Header path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  .skip { position: absolute; left: -999px; top: 8px; z-index: 50; background: var(--sun); color: #13262f; padding: 8px 14px; border-radius: 8px; font-family: var(--font-display); font-weight: 600; }
+  .skip:focus { left: 12px; }
+</style>

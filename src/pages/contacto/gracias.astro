@@ -1,0 +1,12 @@
+---
+import { ogImageFor } from '../../lib/og';
+import Base from '../../layouts/Base.astro';
+const ogImage = await ogImageFor('/');
+---
+<Base title="Mensaje enviado" description="Gracias por escribir a El Viaje Seguro." path="/contacto/gracias/" noindex image={ogImage}>
+  <div class="wrap" style="padding-block:64px">
+    <h1>Mensaje enviado</h1>
+    <p class="lead" style="margin-top:16px">Gracias por escribir. Te responderé lo antes posible.</p>
+    <p style="margin-top:24px"><a class="btn" href="/">Volver al inicio</a></p>
+  </div>
+</Base>

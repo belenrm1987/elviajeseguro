@@ -1,0 +1,37 @@
+---
+title: "Dónde alojarse en Oslo: mejores zonas"
+description: "Dónde alojarse en Oslo: las mejores zonas para dormir según tu tipo de viaje, con ventajas e inconvenientes de cada barrio."
+summary: ""
+keyword: "donde alojarse en oslo"
+updated: ""
+draft: true
+# image: "ruta/dentro/de/src/assets/images/foto.jpg"   # foto de portada (opcional)
+# imageAlt: ""   # describe lo que se ve en la foto y dónde, sin rellenar de keywords
+---
+
+<!--
+BORRADOR · Esta página aparece en la web como "Próximamente" y con noindex.
+Para publicarla: escribe el artículo, rellena summary y updated (AAAA-MM-DD) y cambia draft: true por draft: false.
+Keyword principal: donde alojarse en oslo
+Página padre (enlace obligatorio): /europa/noruega/oslo/
+-->
+
+## Las mejores zonas para alojarse en Oslo
+
+### Zona 1: para una primera visita
+
+### Zona 2: con encanto
+
+### Zona 3: buen precio
+
+## Resumen: qué zona elegir
+
+| Si buscas… | Alójate en |
+|---|---|
+
+## Sigue organizando tu viaje
+- [Qué ver en Oslo](/europa/noruega/oslo/que-ver/)
+- [Oslo en 3 días](/europa/noruega/oslo/en-3-dias/)
+- [Dónde comer en Oslo bien y barato](/europa/noruega/oslo/donde-comer/)
+- [Cuándo ir a Oslo y consejos prácticos](/europa/noruega/oslo/cuando-ir/)
+- Vuelve a la [guía completa de Oslo](/europa/noruega/oslo/)

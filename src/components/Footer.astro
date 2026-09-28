@@ -1,0 +1,58 @@
+---
+import Logo from './Logo.astro';
+import { SITE } from '../lib/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div class="about">
+      <a class="brand" href="/"><Logo /><span>El Viaje <b>Seguro</b></span></a>
+      <p>{SITE.tagline}</p>
+    </div>
+    <nav aria-label="Guías">
+      <h2>Guías</h2>
+      <ul>
+        <li><a href="/destinos/">Destinos</a></li>
+        <li><a href="/cuando-viajar/">Cuándo viajar</a></li>
+        <li><a href="/consejos/">Consejos prácticos</a></li>
+        <li><a href="/rankings/">Rankings</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Destinos">
+      <h2>Destinos</h2>
+      <ul>
+        <li><a href="/espana/">España</a></li>
+        <li><a href="/europa/">Europa</a></li>
+        <li><a href="/asia/">Asia</a></li>
+        <li><a href="/america/">América</a></li>
+        <li><a href="/africa/">África</a></li>
+        <li><a href="/oceania/">Oceanía</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal">
+      <h2>El Viaje Seguro</h2>
+      <ul>
+        <li><a href="/sobre-mi/">Sobre mí</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+        <li><a href="/politica-de-privacidad/">Privacidad</a></li>
+        <li><a href="/cookies/">Cookies</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">© {year} {SITE.name}. Algunas guías pueden incluir enlaces de afiliado, siempre señalados.</div>
+</footer>
+<style>
+  .site-footer { border-top: 1px solid var(--line); background: var(--surface); margin-top: 40px; }
+  .cols { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); padding-block: 44px 28px; }
+  .about { grid-column: span 2; max-width: 360px; }
+  @media (max-width: 560px) { .about { grid-column: auto; } }
+  .about p { color: var(--ink-2); font-size: 0.98rem; margin: 12px 0 0; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: var(--font-display); font-size: 1.2rem; }
+  .brand b { font-weight: 800; }
+  h2 { font-size: 0.8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 10px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  ul a { color: var(--ink); text-decoration: none; font-family: var(--font-display); font-size: 0.95rem; }
+  ul a:hover { color: var(--sea); text-decoration: underline; }
+  .legal { font-family: var(--font-display); font-size: 0.8rem; color: var(--ink-2); padding-block: 16px 28px; border-top: 1px solid var(--line); }
+</style>

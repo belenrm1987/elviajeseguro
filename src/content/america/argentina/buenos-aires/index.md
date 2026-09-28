@@ -1,0 +1,40 @@
+---
+title: "Buenos Aires: guía de viaje completa"
+description: "Guía para viajar a Buenos Aires: qué ver, cuántos días, dónde comer, dónde alojarse, cómo llegar y mejor época para ir. Con consejos prácticos y actualizados."
+summary: ""
+keyword: "viajar a buenos aires"
+updated: ""
+draft: true
+# image: "ruta/dentro/de/src/assets/images/foto.jpg"   # foto de portada (opcional)
+# imageAlt: ""   # describe lo que se ve en la foto y dónde, sin rellenar de keywords
+---
+
+<!--
+BORRADOR · Esta página aparece en la web como "Próximamente" y con noindex.
+Para publicarla: escribe el artículo, rellena summary y updated (AAAA-MM-DD) y cambia draft: true por draft: false.
+Keyword principal: viajar a buenos aires
+Página padre (enlace obligatorio): /america/argentina/
+-->
+
+(Introducción: qué hace especial a Buenos Aires y para quién es)
+
+## Organiza tu viaje a Buenos Aires
+- **[Qué ver en Buenos Aires](/america/argentina/buenos-aires/que-ver/)**
+- **[Buenos Aires en 3 días](/america/argentina/buenos-aires/en-3-dias/)**
+- **[Dónde comer en Buenos Aires bien y barato](/america/argentina/buenos-aires/donde-comer/)**
+- **[Dónde alojarse en Buenos Aires](/america/argentina/buenos-aires/donde-alojarse/)**
+- **[Cuándo ir a Buenos Aires y consejos prácticos](/america/argentina/buenos-aires/cuando-ir/)**
+
+## Buenos Aires en resumen
+
+**La ciudad por zonas.**
+
+**Cómo llegar.**
+
+**Cuántos días.**
+
+## Excursiones desde Buenos Aires
+
+## Antes de ir
+
+Enlaza a la [guía de Argentina](/america/argentina/) y al [seguro de viaje](/consejos/seguro-de-viaje/).

@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getNode } from '../lib/site';
+import { pageGraph } from '../lib/schema';
+import { ogImageFor } from '../lib/og';
+const trail = [getNode('/')!, getNode('/contacto/')!];
+const ogImage = await ogImageFor('/contacto/');
+const description = 'Contacta con El Viaje Seguro: escríbeme para resolver dudas sobre un viaje, proponer una colaboración o avisar de un dato desactualizado en una guía.';
+const graph = pageGraph({ node: getNode('/contacto/')!, title: 'Contacto', description, hasArticle: false, image: ogImage });
+---
+<Base title="Contacto" description={description} path="/contacto/" graph={graph} image={ogImage}>
+  <div class="wrap" style="padding-block:36px 64px">
+    <Breadcrumbs trail={trail} />
+    <h1 style="margin-top:22px">Contacto</h1>
+    <p class="lead" style="margin-block:16px 28px">¿Has visto un dato desactualizado, tienes una duda sobre un viaje o quieres proponer una colaboración? Escríbeme y te respondo en cuanto pueda.</p>
+    <form class="form" name="contacto" method="POST" action="/contacto/gracias/" data-netlify="true" netlify-honeypot="empresa">
+      <input type="hidden" name="form-name" value="contacto" />
+      <p class="hidden-field"><label>No rellenes este campo <input id="empresa" name="empresa" /></label></p>
+      <label for="nombre">Nombre<input id="nombre" name="nombre" autocomplete="name" required /></label>
+      <label for="email">Email<input id="email" name="email" type="email" autocomplete="email" required /></label>
+      <label for="mensaje">Mensaje<textarea id="mensaje" name="mensaje" required></textarea></label>
+      <label style="display:flex;gap:10px;align-items:flex-start;font-weight:500"><input id="privacidad" type="checkbox" name="privacidad" required style="margin-top:5px" /> <span>He leído y acepto la <a href="/politica-de-privacidad/">política de privacidad</a>.</span></label>
+      <button class="btn" type="submit" style="width:fit-content">Enviar mensaje</button>
+    </form>
+  </div>
+</Base>

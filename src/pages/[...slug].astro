@@ -1,0 +1,171 @@
+---
+// Genera TODAS las URLs de la arquitectura (salvo la home y contacto, que tienen página propia).
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Card from '../components/Card.astro';
+import Facts from '../components/Facts.astro';
+import PlanBlock from '../components/PlanBlock.astro';
+import {
+  NODES, SITE, getNode, getContent, children, ancestors, siblings, countryOf, cityOf,
+  beforeYouGo, isIndexable, cleanTitle, descriptionFor, hasContent, CONTINENTS, imageFor, type Node,
+} from '../lib/site';
+import { pageGraph } from '../lib/schema';
+import { ogImageFor } from '../lib/og';
+import Hero from '../components/Hero.astro';
+
+export function getStaticPaths() {
+  return NODES.filter((n) => n.url !== '/' && n.url !== '/contacto/').map((n) => ({
+    params: { slug: n.url.replace(/^\/|\/$/g, '') },
+  }));
+}
+
+const path = `/${Astro.params.slug}/`;
+const node = getNode(path)!;
+const entry = getContent(path);
+const fm = entry?.frontmatter ?? {};
+const Content = entry?.Content;
+const trail = [...ancestors(path), node];
+const kids = children(path);
+const title = cleanTitle(node);
+const description = descriptionFor(node);
+const indexable = isIndexable(path);
+
+const t = node.type;
+const isHub = t.startsWith('Hub') || t === 'Sub-hub estacional';
+const isCountry = t === 'Pilar país' || t === 'Pilar comunidad';
+const isCity = t === 'Pilar ciudad/destino';
+const isCitySat = t === 'Satélite ciudad';
+const isCountrySat = t === 'Satélite país';
+const isLegal = t === 'Página corporativa (footer)';
+const withAside = !!Content && !isHub && !isLegal;
+
+const city = cityOf(path);
+const country = countryOf(path);
+const cityPlan: Node[] = city ? [city, ...children(city.url)] : [];
+const countrySats = country ? children(country.url).filter((n) => n.type === 'Satélite país') : [];
+const countryCities = country ? children(country.url).filter((n) => n.type === 'Pilar ciudad/destino') : [];
+const nearby = isCity ? siblings(path).filter((n) => n.type === 'Pilar ciudad/destino').slice(0, 4) : [];
+const before = (isCountry || isCity || isCitySat || isCountrySat) ? beforeYouGo(path) : [];
+const monthSiblings = t === 'Satélite calendario' && /\/cuando-viajar\/[a-z]+\/$/.test(path)
+  ? siblings(path).filter((n) => /^Dónde viajar en/.test(n.title)) : [];
+const otherSats = (t.startsWith('Satélite') && !isCitySat && !isCountrySat && !monthSiblings.length)
+  ? siblings(path).slice(0, 8) : [];
+
+// Destinos hub: agrupado por continente
+const destGroups = path === '/destinos/'
+  ? CONTINENTS.map((c) => ({ node: getNode(c)!, items: children(c) }))
+  : [];
+
+const hero = imageFor(path);
+const ogImage = await ogImageFor(path);
+const isArticle = !!entry && !isHub && !isLegal;
+const graph = pageGraph({
+  node, title, description, hasArticle: !!entry, image: ogImage,
+  published: fm.published ?? fm.updated, modified: fm.updated,
+});
+const fmtDate = (d?: string) =>
+  d ? new Date(d).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+const eyebrow = isCitySat || isCountrySat ? (city ?? country)?.name : trail.length > 2 ? trail[trail.length - 2].name : node.silo;
+---
+<Base title={title} seoTitle={fm.seoTitle} description={description} path={path} noindex={!indexable} graph={graph} image={ogImage} ogType={isArticle ? 'article' : 'website'} published={fm.published ?? fm.updated} modified={fm.updated} section={node.silo}>
+  <div class="wrap">
+    <header class="article-head">
+      <Breadcrumbs trail={trail} />
+      <p class="eyebrow" style="margin-top:22px">{eyebrow}</p>
+      <h1>{title}</h1>
+      {fm.summary && <p class="lead">{fm.summary}</p>}
+      {entry && fm.updated && (
+        <p class="article-meta">{isArticle && SITE.author.name && <span>Por <a class="byline" href={SITE.author.url} rel="author">{SITE.author.name}</a></span>}<span>Actualizado el <time datetime={fm.updated}>{fmtDate(fm.updated)}</time></span>{isArticle && <span>Guía práctica</span>}</p>
+      )}
+      {!entry && (
+        <div class="draft-note">
+          <strong>Estamos preparando esta guía.</strong>
+          {kids.length > 0
+            ? ' Mientras tanto, aquí tienes todo lo que ya puedes consultar en esta sección.'
+            : ' Mientras tanto, puedes consultar las guías relacionadas que tienes justo debajo.'}
+        </div>
+      )}
+      {hero && <Hero image={hero} />}
+    </header>
+
+    <div class={withAside ? 'layout' : ''} style={!withAside ? 'padding-block:28px 56px' : ''}>
+      <div>
+        {Content && (
+          <article class="prose">
+            <Content />
+          </article>
+        )}
+
+        {/* Hub Destinos: todos los continentes y sus países */}
+        {destGroups.map((g) => (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div><h2><a href={g.node.url} style="color:inherit;text-decoration:none">{g.node.name}</a></h2><p>{g.items.length} {g.node.url === '/espana/' ? 'comunidades' : 'países'}</p></div><a class="more" href={g.node.url}>Ver {g.node.name} →</a></div>
+            <div class="grid">{g.items.map((n) => <Card node={n} variant="dest" />)}</div>
+          </section>
+        ))}
+
+        {/* Hubs y pilares: sus hijos */}
+        {path !== '/destinos/' && (isHub || isCountry) && kids.length > 0 && (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div>
+              <h2>{isCountry ? `Destinos en ${node.name}` : t === 'Hub continente' ? 'Países' : t === 'Hub país (España)' ? 'Comunidades' : 'Todas las guías'}</h2>
+            </div></div>
+            <div class="grid">
+              {(isCountry ? countryCities : kids).map((n) => <Card node={n} variant={isCountry || t.startsWith('Hub c') || t.startsWith('Hub p') ? 'dest' : 'plain'} />)}
+            </div>
+          </section>
+        )}
+
+        {/* Consejos: variantes por país de cada pilar temático */}
+        {t === 'Satélite consejos (pilar temático)' && kids.length > 0 && (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div><h2>Por destino</h2></div></div>
+            <div class="grid">{kids.map((n) => <Card node={n} />)}</div>
+          </section>
+        )}
+
+        {/* Pilar ciudad sin contenido: sus satélites en rejilla */}
+        {isCity && !Content && (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div><h2>Planifica {node.name}</h2></div></div>
+            <div class="grid">{kids.map((n) => <Card node={n} />)}</div>
+          </section>
+        )}
+
+        {/* Satélites sin contenido: guías hermanas */}
+        {!Content && !isHub && !isCountry && !isCity && (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div><h2>Guías relacionadas</h2></div></div>
+            <div class="grid">
+              {[...(city ? cityPlan : []), ...(country && !city ? [country, ...countrySats] : []), ...monthSiblings, ...otherSats]
+                .filter((n) => n.url !== path).slice(0, 12).map((n) => <Card node={n} />)}
+            </div>
+          </section>
+        )}
+
+        {/* Pilar país con contenido: bloque organiza tu viaje en rejilla */}
+        {isCountry && countrySats.length > 0 && (
+          <section class="section" style="padding-bottom:8px">
+            <div class="section-head"><div><h2>Organiza tu viaje a {node.name}</h2></div></div>
+            <div class="grid">{countrySats.map((n) => <Card node={n} />)}</div>
+          </section>
+        )}
+      </div>
+
+      {withAside && (
+        <aside class="aside">
+          <div class="aside-sticky aside">
+            {fm.facts && <Facts facts={fm.facts} />}
+            {cityPlan.length > 0 && <PlanBlock title={`Planifica ${city!.name}`} items={cityPlan} current={path} />}
+            {!city && isCountrySat && <PlanBlock title={`Organiza tu viaje a ${country!.name}`} items={[country!, ...countrySats]} current={path} />}
+            {isCity && nearby.length > 0 && <PlanBlock title={`Cerca de ${node.name}`} items={nearby} />}
+            {isCitySat && country && <PlanBlock title={`Más de ${country.name}`} items={[country, ...countrySats.slice(0, 3)]} />}
+            {before.length > 0 && <PlanBlock title="Antes de viajar" items={before} />}
+            {monthSiblings.length > 0 && <PlanBlock title="Otros meses" items={monthSiblings} />}
+            {otherSats.length > 0 && !monthSiblings.length && <PlanBlock title="Sigue leyendo" items={otherSats.slice(0, 6)} />}
+          </div>
+        </aside>
+      )}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,23 @@
+---
+// Imagen principal del artículo: AVIF/WebP responsive, con dimensiones fijas (sin saltos de maquetación) y carga prioritaria (LCP).
+import { Picture } from 'astro:assets';
+const { image } = Astro.props as { image: { src: ImageMetadata; alt: string; caption?: string } };
+---
+<figure class="hero-img">
+  <Picture
+    src={image.src}
+    alt={image.alt}
+    formats={['avif', 'webp']}
+    widths={[480, 800, 1200, 1600].filter((w) => w <= image.src.width)}
+    sizes="(min-width: 1220px) 1180px, calc(100vw - 40px)"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  />
+  {image.caption && <figcaption>{image.caption}</figcaption>}
+</figure>
+<style>
+  .hero-img { margin: 24px 0 0; }
+  .hero-img :global(img) { width: 100%; height: auto; max-height: 560px; object-fit: cover; border-radius: 14px; background: var(--chip); }
+  figcaption { font-family: var(--font-display); font-size: 0.82rem; color: var(--ink-2); margin-top: 8px; }
+</style>

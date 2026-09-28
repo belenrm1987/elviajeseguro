@@ -1,0 +1,8 @@
+---
+import { Picture } from 'astro:assets';
+const { image } = Astro.props as { image: { src: ImageMetadata; alt: string } };
+---
+<Picture src={image.src} alt={image.alt} formats={['avif', 'webp']} widths={[320, 640]} sizes="(min-width: 800px) 300px, 100vw" loading="lazy" decoding="async" class="thumb" />
+<style>
+  .thumb { width: 100%; height: 150px; object-fit: cover; display: block; }
+</style>

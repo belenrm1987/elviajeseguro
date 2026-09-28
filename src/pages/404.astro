@@ -1,0 +1,13 @@
+---
+import { ogImageFor } from '../lib/og';
+import Base from '../layouts/Base.astro';
+const ogImage = await ogImageFor('/');
+---
+<Base title="Página no encontrada" description="La página que buscas no existe o ha cambiado de dirección." path="/404/" noindex image={ogImage}>
+  <div class="wrap" style="padding-block:72px">
+    <p class="eyebrow">Error 404</p>
+    <h1 style="margin-top:10px">Este camino no lleva a ninguna parte</h1>
+    <p class="lead" style="margin-top:16px">La página que buscas no existe o ha cambiado de dirección. Prueba desde aquí:</p>
+    <p style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="/destinos/">Ver destinos</a><a class="btn ghost" href="/">Ir al inicio</a></p>
+  </div>
+</Base>

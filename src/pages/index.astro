@@ -1,0 +1,156 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import { homeGraph } from '../lib/schema';
+import { ogImageFor } from '../lib/og';
+import {
+  SITE, getNode, cleanTitle, children, latest, featuredDestinations, currentMonthNode, CONTINENTS, getContent, hasContent,
+} from '../lib/site';
+
+const hubs = [
+  { url: '/destinos/', text: 'Guías por continente, país y ciudad: qué ver, itinerarios, dónde comer y dónde dormir.' },
+  { url: '/cuando-viajar/', text: 'Dónde viajar cada mes del año, puentes y escapadas, con el clima de tu lado.' },
+  { url: '/consejos/', text: 'Seguro de viaje, eSIM, requisitos, dinero y maleta: lo que conviene tener resuelto antes de salir.' },
+  { url: '/rankings/', text: 'Los pueblos, playas y ciudades más bonitos, con criterio y sin relleno.' },
+].map((h) => ({ ...h, node: getNode(h.url)! }));
+const month = currentMonthNode();
+const monthEntry = month ? getContent(month.url) : undefined;
+const featured = featuredDestinations();
+const fresh = latest(6);
+const continents = CONTINENTS.map((u) => getNode(u)!);
+const tips = ['/consejos/seguro-de-viaje/', '/consejos/que-llevar-en-la-maleta/', '/consejos/esim-para-viajar/', '/consejos/requisitos-y-visados/']
+  .map((u) => getNode(u)!).filter(Boolean);
+
+const ogImage = await ogImageFor('/');
+const graph = homeGraph(ogImage, featured);
+---
+<Base title="El Viaje Seguro · Guías y consejos para viajar tranquilo" description="Guías de viaje prácticas para organizar tu viaje sin rodeos: qué ver, itinerarios, cuándo ir, dónde comer y dónde alojarse en España, Europa y el mundo." path="/" graph={graph} image={ogImage}>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Blog de viajes práctico</p>
+        <h1>Viajar bien empieza por ir sobre <span class="mark">seguro</span>.</h1>
+        <p class="lead">Guías sin rodeos para organizar tu próximo viaje: qué ver, cuántos días, cuándo ir, dónde comer y dónde dormir. Todo en un mismo sitio, fácil de consultar.</p>
+        <div class="cta">
+          <a class="btn" href="/destinos/">Explorar destinos</a>
+          {month && <a class="btn ghost" href={month.url}>Dónde viajar en {month.url.split('/')[2]}</a>}
+        </div>
+      </div>
+      <figure class="route" aria-hidden="true">
+        <svg viewBox="0 0 420 300" role="presentation">
+          <path d="M30 240 C 110 230, 110 150, 190 150 S 280 70, 380 60" fill="none" stroke="var(--sea)" stroke-width="3" stroke-dasharray="7 8" stroke-linecap="round"/>
+          <g font-family="var(--font-display)" font-size="14" font-weight="600" fill="var(--ink)">
+            <circle cx="30" cy="240" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/><text x="46" y="262">Idea</text>
+            <circle cx="190" cy="150" r="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/><text x="150" y="182">Todo listo</text>
+            <circle cx="380" cy="60" r="12" fill="var(--sun)" stroke="var(--ink)" stroke-width="3"/><text x="300" y="36">Buen viaje</text>
+          </g>
+        </svg>
+        <ul class="route-steps">
+          <li><b>Qué ver</b> lo imprescindible</li>
+          <li><b>Cuándo ir</b> mes a mes</li>
+          <li><b>Cuánto tiempo</b> itinerarios día a día</li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Por dónde empezar</h2><p>Cuatro secciones para resolver cualquier duda de viaje.</p></div></div>
+      <div class="grid hubs">
+        {hubs.map((h) => (
+          <a class="card hub" href={h.url}>
+            <span class="card-title">{h.node.name}</span>
+            <p>{h.text}</p>
+            <span class="card-meta">{children(h.url).length} secciones →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {month && (
+    <section class="section">
+      <div class="wrap month">
+        <div>
+          <p class="eyebrow">Este mes</p>
+          <h2>{month.title.split(':')[0]}</h2>
+          <p>{monthEntry?.frontmatter.summary ?? 'Destinos con buen tiempo, buenos precios y menos gente para escaparte este mes.'}</p>
+          <a class="btn" href={month.url}>Ver destinos del mes</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {featured.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><h2>Guías destacadas</h2><p>Destinos con su guía completa, lista para consultar.</p></div><a class="more" href="/destinos/">Todos los destinos →</a></div>
+        <div class="grid">{featured.map((n) => <Card node={n} variant="dest" text={getContent(n.url)?.frontmatter.summary} />)}</div>
+      </div>
+    </section>
+  )}
+
+  {fresh.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><h2>Recién actualizadas</h2></div></div>
+        <div class="grid wide">{fresh.map((n) => <Card node={n} label={cleanTitle(n)} text={getContent(n.url)?.frontmatter.summary} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Destinos por continente</h2></div></div>
+      <div class="continents">
+        {continents.map((c) => (
+          <div>
+            <h3><a href={c.url}>{c.name}</a></h3>
+            <ul>
+              {children(c.url).slice(0, 8).map((n) => <li><a href={n.url}>{n.name}</a>{hasContent(n.url) && <span class="chip new">guía</span>}</li>)}
+              {children(c.url).length > 8 && <li><a class="all" href={c.url}>Ver los {children(c.url).length} →</a></li>}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><div><h2>Antes de viajar</h2><p>Lo práctico, resuelto.</p></div><a class="more" href="/consejos/">Todos los consejos →</a></div>
+      <div class="grid">{tips.map((n) => <Card node={n} />)}</div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: 56px 24px; }
+  .hero-grid { display: grid; gap: 40px; align-items: center; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; } }
+  .hero h1 { margin-top: 12px; max-width: 16ch; }
+  .hero .lead { margin-top: 18px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .route { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 14px; box-shadow: var(--shadow); }
+  .route svg { width: 100%; height: auto; }
+  .route-steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; font-family: var(--font-display); font-size: 0.92rem; color: var(--ink-2); }
+  .route-steps b { color: var(--ink); }
+  .hubs .card { padding: 20px; min-height: 170px; }
+  .hubs .card-title { font-size: 1.3rem; }
+  .hub .card-meta { margin-top: auto; color: var(--sea); font-weight: 600; }
+  .month { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 36px 32px; display: grid; }
+  .month .eyebrow { color: var(--sun); }
+  .month h2 { margin-top: 8px; }
+  .month p { max-width: 62ch; color: color-mix(in srgb, var(--paper) 80%, transparent); margin: 12px 0 20px; }
+  .month .btn { background: var(--sun); color: #13262f; width: fit-content; }
+  .month .btn:hover { background: #fff; }
+  .continents { display: grid; gap: 28px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  .continents h3 a { color: var(--ink); text-decoration: none; }
+  .continents h3 a:hover { color: var(--sea); }
+  .continents ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 4px; }
+  .continents li { display: flex; gap: 8px; align-items: center; }
+  .continents li a { font-family: var(--font-display); font-size: 0.95rem; color: var(--ink); text-decoration: none; }
+  .continents li a:hover { color: var(--sea); text-decoration: underline; }
+  .continents .all { color: var(--sea) !important; font-weight: 600; }
+</style>

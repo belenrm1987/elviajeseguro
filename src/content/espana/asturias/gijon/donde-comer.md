@@ -1,0 +1,33 @@
+---
+title: "Dónde comer en Gijón bien y barato"
+description: "Dónde comer en Gijón bien y barato: platos típicos, mejores zonas para comer y consejos para evitar los sitios para turistas."
+summary: ""
+keyword: "donde comer en gijón"
+updated: ""
+draft: true
+# image: "ruta/dentro/de/src/assets/images/foto.jpg"   # foto de portada (opcional)
+# imageAlt: ""   # describe lo que se ve en la foto y dónde, sin rellenar de keywords
+---
+
+<!--
+BORRADOR · Esta página aparece en la web como "Próximamente" y con noindex.
+Para publicarla: escribe el artículo, rellena summary y updated (AAAA-MM-DD) y cambia draft: true por draft: false.
+Keyword principal: donde comer en gijón
+Página padre (enlace obligatorio): /espana/asturias/gijon/
+-->
+
+## Qué comer en Gijón
+
+## Mejores zonas para comer en Gijón
+
+| Zona | Para qué | Tipo de sitio |
+|---|---|---|
+
+## Consejos para comer bien y barato en Gijón
+
+## Sigue organizando tu viaje
+- [Qué ver en Gijón](/espana/asturias/gijon/que-ver/)
+- [Gijón en 3 días](/espana/asturias/gijon/en-3-dias/)
+- [Dónde alojarse en Gijón](/espana/asturias/gijon/donde-alojarse/)
+- [Cuándo ir a Gijón y consejos prácticos](/espana/asturias/gijon/cuando-ir/)
+- Vuelve a la [guía completa de Gijón](/espana/asturias/gijon/)
