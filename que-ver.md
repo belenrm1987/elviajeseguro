@@ -1,84 +1,89 @@
 ---
-title: "Qué ver en Lisboa: 15 imprescindibles por barrios"
-seoTitle: "Qué ver en Lisboa: 15 imprescindibles"
-description: "Qué ver en Lisboa: los 15 imprescindibles por barrios, de Alfama y el tranvía 28 a Belém, el Chiado y los mejores miradores, con trucos para evitar colas."
-summary: "Lisboa se recorre a golpe de cuesta, tranvía y mirador. Aquí tienes lo imprescindible ordenado por barrios para que encadenes las visitas sin subir y bajar colinas de más."
-keyword: "que ver en lisboa"
+title: "Qué ver en Londres: 16 imprescindibles por zonas"
+seoTitle: "Qué ver en Londres: 16 imprescindibles"
+description: "Qué ver en Londres: los 16 imprescindibles por zonas, de Westminster y la Torre de Londres a los museos gratis, Camden y Notting Hill, con trucos para ahorrar."
+summary: "Londres es enorme, pero lo esencial se agrupa junto al Támesis. Aquí lo tienes por zonas, con los museos gratuitos, lo que hay que reservar y cómo moverte sin gastar de más."
+keyword: "que ver en londres"
 updated: "2026-11-04"
 draft: false
-image: "europa/portugal/lisboa/que-ver/lisboa-torre-de-belem.jpg"
-imageAlt: "Torre de Belém sobre el estuario del Tajo con la pasarela de madera de acceso, en Lisboa"
-imageCaption: "La Torre de Belém, a la orilla del Tajo. Foto: Marin Barisic (Unsplash)"
+image: "europa/reino-unido/londres/que-ver/londres-westminster-big-ben.jpg"
+imageAlt: "Palacio de Westminster y la torre del Big Ben junto al Támesis en un día nublado de Londres"
+imageCaption: "Westminster desde el puente: la postal de Londres. Foto: Maik Winnecke (Unsplash)"
 facts:
-  - { label: "Tiempo", value: "3 días + 1 para Sintra" }
-  - { label: "Reserva antes", value: "Monasterio de los Jerónimos" }
-  - { label: "Gratis", value: "Miradores, Alfama y Praça do Comércio" }
-  - { label: "Calzado", value: "Suela que agarre: el suelo de piedra resbala" }
+  - { label: "Tiempo", value: "4 días para lo esencial" }
+  - { label: "Antes de ir", value: "ETA obligatoria y pasaporte" }
+  - { label: "Gratis", value: "British Museum, National Gallery, Tate Modern" }
+  - { label: "Transporte", value: "Paga con tarjeta contactless" }
 ---
 
-Lisboa está construida sobre colinas, y cada una es un barrio con carácter propio. La forma más cómoda de verla es por zonas: un día para la parte alta y medieval, otro para el centro y la Baixa, y una mañana entera para Belém. Si quieres un plan cerrado, tienes [Lisboa en 3 días](/europa/portugal/lisboa/en-3-dias/).
+Londres no se acaba nunca, pero el viajero que va por primera vez puede organizarse en torno al río: Westminster a un lado, la City y la Torre al otro, y los grandes museos repartidos entre medias. Muchos de ellos son gratuitos, lo que compensa los precios del resto de la ciudad. Si quieres un plan día a día, mira [Londres en 3 días](/europa/reino-unido/londres/en-3-dias/).
 
-## Alfama y el castillo
+## Westminster
 
-### 1. Castillo de San Jorge
-En lo alto de la colina más antigua de la ciudad. Las murallas tienen vistas a toda Lisboa y al Tajo. Ve a primera hora para evitar los grupos.
+### 1. Big Ben y Parlamento
+El Palacio de Westminster y su torre del reloj se ven mejor desde el puente de Westminster o desde la orilla sur. Las visitas al interior del Parlamento se hacen con reserva, normalmente los sábados y en periodos de vacaciones parlamentarias.
 
-### 2. Barrio de Alfama
-El barrio que sobrevivió al terremoto de 1755: escaleras, ropa tendida y casas de fados. Piérdete sin rumbo y baja hacia el río; es imposible equivocarse.
+### 2. Abadía de Westminster
+Aquí se coronan los reyes británicos y están enterrados Newton y Darwin. La entrada es de pago y conviene comprarla online.
 
-### 3. Miradores de Santa Luzia y Portas do Sol
-Dos miradores casi pegados, con los tejados de Alfama a tus pies. Son de las vistas más fotografiadas de la ciudad.
+### 3. Palacio de Buckingham y el cambio de guardia
+El cambio de guardia no se celebra todos los días: comprueba el calendario oficial antes de ir. Llega al menos media hora antes para coger sitio junto a la verja.
 
-### 4. Catedral (Sé) y el tranvía 28
-La catedral es la iglesia más antigua de Lisboa. Delante pasa el tranvía 28, que cruza los barrios históricos. Súbete en la cabecera de Martim Moniz o muy temprano: a media mañana las colas son de una hora.
+### 4. Trafalgar Square y National Gallery
+Una de las mejores pinacotecas del mundo, con Van Gogh, Turner y Velázquez, y gratis. Al lado, la National Portrait Gallery.
 
-![Tranvía amarillo 28 circulando por una calle estrecha y empedrada de Alfama, en Lisboa](./lisboa-tranvia-28-alfama.jpg)
-*El tranvía 28 por las calles de Alfama. Foto: Rasmus Andersen (Unsplash)*
+## Ribera sur
 
-## Baixa y Chiado
+### 5. London Eye
+La noria junto al Támesis tiene vistas de toda la ciudad. Compra la entrada con hora online; al atardecer es cuando más se llena.
 
-### 5. Praça do Comércio
-La gran plaza abierta al río, con el arco de la Rua Augusta. Desde lo alto del arco hay buenas vistas de la Baixa.
+### 6. Tate Modern y el puente del Milenio
+Arte contemporáneo gratis en una antigua central eléctrica. Desde su mirador se ve la cúpula de San Pablo al otro lado del puente.
 
-### 6. Rua Augusta y la Baixa Pombalina
-El barrio reconstruido tras el terremoto en cuadrícula, con calles peatonales llenas de tiendas y cafés.
+### 7. Borough Market
+El mercado gastronómico más famoso de Londres. Ve con hambre a mediodía entre semana; el sábado está a reventar.
 
-### 7. Elevador de Santa Justa
-Un ascensor de hierro neogótico que une la Baixa con el Chiado. La cola es larga; si solo quieres las vistas, sube andando hasta su mirador por la parte de arriba.
+## La City y la Torre
 
-### 8. Chiado y Café A Brasileira
-El barrio de las librerías y los cafés literarios. Frente a A Brasileira, la estatua de Fernando Pessoa sentado en la terraza.
+### 8. Torre de Londres
+Fortaleza, prisión y hoy casa de las Joyas de la Corona. Haz la visita con uno de los Beefeaters: es gratuita con la entrada y muy divertida.
 
-### 9. Bairro Alto y mirador de São Pedro de Alcântara
-De día, calles tranquilas; de noche, el barrio de bares de Lisboa. El mirador tiene vistas al castillo y a la Baixa.
+### 9. Tower Bridge
+El puente levadizo más famoso del mundo. Su pasarela superior tiene un suelo de cristal sobre el río.
 
-## Belém
+![Tower Bridge de Londres visto desde la calzada, con sus dos torres de piedra y estructura azul](./londres-tower-bridge.jpg)
+*Tower Bridge desde la calzada. Si tienes suerte, verás cómo se levanta para dejar pasar un barco. Foto: Lukas Souza (Unsplash)*
 
-### 10. Monasterio de los Jerónimos
-Obra maestra del estilo manuelino y Patrimonio de la Humanidad, con la tumba de Vasco da Gama. Compra la entrada online: la cola de taquilla es de las peores de la ciudad.
+### 10. Catedral de San Pablo y Sky Garden
+La cúpula de San Pablo tiene una galería con un curioso efecto acústico. Para ver la City desde arriba gratis, reserva el Sky Garden con antelación.
 
-### 11. Torre de Belém
-La torre defensiva del siglo XVI sobre el Tajo, símbolo de la época de los descubrimientos. Por fuera, la visita es gratis y suele bastar.
+## Grandes museos gratuitos
 
-### 12. Padrão dos Descobrimentos y los pasteles de Belém
-El monumento a los navegantes portugueses tiene un mirador en lo alto. Y antes de irte, para en la antigua fábrica de los pasteles de Belém: la cola avanza rápido.
+### 11. British Museum
+En Bloomsbury: la piedra Rosetta, los mármoles del Partenón y las momias egipcias. Gratis, aunque se agradece la donación. Ve con un plan: no se puede ver entero en un día.
 
-## Más allá del centro
+### 12. Museo de Historia Natural
+Ya en South Kensington, el esqueleto de ballena azul del vestíbulo justifica la visita. Ideal si viajas con niños.
 
-### 13. LX Factory
-Una antigua fábrica bajo el puente 25 de Abril convertida en espacio de tiendas, restaurantes y arte urbano.
+### 13. Victoria and Albert Museum
+Diseño, moda y artes decorativas. Su patio con cafetería es un oasis.
 
-### 14. Oceanario de Lisboa
-Uno de los acuarios más grandes de Europa, en el Parque de las Naciones. Perfecto para un día de lluvia o si viajas con niños.
+## Barrios con carácter
 
-### 15. Excursión a Sintra
-Palacios de cuento entre la niebla, como el Palacio da Pena y la Quinta da Regaleira. Está a unos 40 minutos en tren desde la estación de Rossio. Dedícale un día entero y reserva las entradas antes.
+### 14. Covent Garden y Soho
+Artistas callejeros, tiendas y teatros. Las entradas de última hora para los musicales del West End se compran en las taquillas de Leicester Square.
 
-> **Consejo práctico**: el tranvía 28 y los Jerónimos son las dos grandes colas de Lisboa. Coge el tranvía en su primera parada o antes de las nueve, y compra la entrada de los Jerónimos online. Si piensas usar mucho el transporte, una tarjeta recargable de transporte o el pase de 24 horas te saldrán más baratos que los billetes sueltos del tranvía.
+### 15. Camden Town
+Mercados, puestos de comida de todo el mundo y ambiente alternativo junto al canal de Regent's.
+
+### 16. Notting Hill y Portobello Road
+Casas de colores y el mercado de antigüedades de Portobello, que se monta los sábados.
+
+> **Consejo práctico**: para entrar en Reino Unido necesitas pasaporte y una autorización electrónica de viaje, la [ETA](https://www.gov.uk/eta), que se tramita online antes de volar. Ya en Londres, no compres billetes sueltos de metro: paga con tu tarjeta o el móvil contactless y el sistema aplica automáticamente el tope diario.
 
 ## Sigue organizando tu viaje
-- [Lisboa en 3 días](/europa/portugal/lisboa/en-3-dias/)
-- [Dónde comer en Lisboa bien y barato](/europa/portugal/lisboa/donde-comer/)
-- [Dónde alojarse en Lisboa](/europa/portugal/lisboa/donde-alojarse/)
-- [Cuándo ir a Lisboa y consejos prácticos](/europa/portugal/lisboa/cuando-ir/)
-- Vuelve a la [guía completa de Lisboa](/europa/portugal/lisboa/)
+- [Londres en 3 días](/europa/reino-unido/londres/en-3-dias/)
+- [Dónde comer en Londres bien y barato](/europa/reino-unido/londres/donde-comer/)
+- [Dónde alojarse en Londres](/europa/reino-unido/londres/donde-alojarse/)
+- [Cuándo ir a Londres y consejos prácticos](/europa/reino-unido/londres/cuando-ir/)
+- Vuelve a la [guía completa de Londres](/europa/reino-unido/londres/)

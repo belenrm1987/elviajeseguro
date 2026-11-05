@@ -1,13 +1,7 @@
 ---
-title: "Viajar por Europa: guías por país"
-description: "Guías para viajar por Europa: Portugal, Italia, Francia, Reino Unido, Grecia y más, con qué ver, itinerarios y consejos prácticos por país y ciudad."
-summary: "De Lisboa a Estocolmo y de Edimburgo a Atenas: guías por país y ciudad para organizar escapadas y viajes largos por Europa."
+title: "Rankings de viaje: los lugares más bonitos, con criterio"
+description: "Listas de los pueblos, playas, ciudades e islas más bonitos de España y Europa, con criterio propio y enlaces a la guía de cada destino."
+summary: "Listas de pueblos, playas, ciudades e islas elegidos con criterio. Cada lugar enlaza a su guía para que puedas pasar de la idea al plan."
 ---
 
-Europa es el destino más cómodo para viajar desde España:
-
-- **Vuelos cortos**: la mayoría de las capitales están a menos de tres horas.
-- **Documentación sencilla**: en la Unión Europea y el espacio Schengen basta con el DNI.
-- **Asistencia sanitaria**: con la Tarjeta Sanitaria Europea tienes atención pública en los países de la UE.
-
-Empieza por el país que te interese. En cada uno encontrarás sus ciudades y las guías prácticas para organizar el viaje.
+En cada ranking explicamos por qué está cada lugar, cuál es la mejor época para ir y cómo llegar. Nada de listas infinitas: solo los sitios que merecen el viaje.
