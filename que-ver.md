@@ -1,89 +1,89 @@
 ---
-title: "Qué ver en Londres: 16 imprescindibles por zonas"
-seoTitle: "Qué ver en Londres: 16 imprescindibles"
-description: "Qué ver en Londres: los 16 imprescindibles por zonas, de Westminster y la Torre de Londres a los museos gratis, Camden y Notting Hill, con trucos para ahorrar."
-summary: "Londres es enorme, pero lo esencial se agrupa junto al Támesis. Aquí lo tienes por zonas, con los museos gratuitos, lo que hay que reservar y cómo moverte sin gastar de más."
-keyword: "que ver en londres"
+title: "Qué ver en Madrid: 16 imprescindibles por zonas"
+seoTitle: "Qué ver en Madrid: 16 imprescindibles"
+description: "Qué ver en Madrid: los 16 lugares imprescindibles ordenados por barrios, del Palacio Real y la Plaza Mayor al Prado y el Retiro, con horas gratis y trucos."
+summary: "Madrid se entiende caminando. Estos son los lugares que no te puedes perder, agrupados por zonas para que no pierdas tiempo en metro y sepas qué conviene reservar."
+keyword: "que ver en madrid"
 updated: "2026-11-04"
 draft: false
-image: "europa/reino-unido/londres/que-ver/londres-westminster-big-ben.jpg"
-imageAlt: "Palacio de Westminster y la torre del Big Ben junto al Támesis en un día nublado de Londres"
-imageCaption: "Westminster desde el puente: la postal de Londres. Foto: Maik Winnecke (Unsplash)"
+image: "espana/madrid/madrid/que-ver/madrid-plaza-mayor.jpg"
+imageAlt: "Plaza Mayor de Madrid al atardecer, con la estatua ecuestre de Felipe III y la Casa de la Panadería al fondo"
+imageCaption: "La Plaza Mayor, el mejor punto de partida para recorrer el Madrid de los Austrias. Foto: Eduardo Rodriguez (Unsplash)"
 facts:
-  - { label: "Tiempo", value: "4 días para lo esencial" }
-  - { label: "Antes de ir", value: "ETA obligatoria y pasaporte" }
-  - { label: "Gratis", value: "British Museum, National Gallery, Tate Modern" }
-  - { label: "Transporte", value: "Paga con tarjeta contactless" }
+  - { label: "Tiempo", value: "3 días para lo esencial" }
+  - { label: "Reserva antes", value: "Palacio Real y Bernabéu" }
+  - { label: "Gratis", value: "Prado y Reina Sofía a última hora" }
+  - { label: "Muévete", value: "A pie por el centro, metro para lo demás" }
 ---
 
-Londres no se acaba nunca, pero el viajero que va por primera vez puede organizarse en torno al río: Westminster a un lado, la City y la Torre al otro, y los grandes museos repartidos entre medias. Muchos de ellos son gratuitos, lo que compensa los precios del resto de la ciudad. Si quieres un plan día a día, mira [Londres en 3 días](/europa/reino-unido/londres/en-3-dias/).
+El centro de Madrid es más pequeño de lo que parece en el mapa: entre el Palacio Real y el Retiro hay apenas media hora andando. Por eso esta guía va por zonas, en el orden en que tiene sentido recorrerlas. Si prefieres un plan cerrado día a día, tienes el itinerario de [Madrid en 3 días](/espana/madrid/madrid/en-3-dias/).
 
-## Westminster
+## Madrid de los Austrias
 
-### 1. Big Ben y Parlamento
-El Palacio de Westminster y su torre del reloj se ven mejor desde el puente de Westminster o desde la orilla sur. Las visitas al interior del Parlamento se hacen con reserva, normalmente los sábados y en periodos de vacaciones parlamentarias.
+### 1. Plaza Mayor
+Soportales, balcones de forja y la Casa de la Panadería con sus pinturas en la fachada. Ve temprano por la mañana para verla vacía, y deja el bocadillo de calamares para cualquiera de los bares de las calles de alrededor, que suelen ser más baratos que las terrazas de la plaza.
 
-### 2. Abadía de Westminster
-Aquí se coronan los reyes británicos y están enterrados Newton y Darwin. La entrada es de pago y conviene comprarla online.
+### 2. Mercado de San Miguel
+Una estructura de hierro de principios del siglo XX convertida en mercado gastronómico. Es caro y se llena, pero merece la pena entrar a verlo aunque solo tomes un vermú.
 
-### 3. Palacio de Buckingham y el cambio de guardia
-El cambio de guardia no se celebra todos los días: comprueba el calendario oficial antes de ir. Llega al menos media hora antes para coger sitio junto a la verja.
+### 3. Puerta del Sol
+El kilómetro cero de las carreteras españolas está en el suelo, frente a la Real Casa de Correos. Aquí también está el Oso y el Madroño, el punto de encuentro de medio Madrid.
 
-### 4. Trafalgar Square y National Gallery
-Una de las mejores pinacotecas del mundo, con Van Gogh, Turner y Velázquez, y gratis. Al lado, la National Portrait Gallery.
+### 4. Plaza de la Villa y calle Mayor
+Uno de los rincones más antiguos de la ciudad, con la Torre de los Lujanes. Pocos turistas se paran aquí y es una pena: es Madrid en estado puro.
 
-## Ribera sur
+## Palacio Real y alrededores
 
-### 5. London Eye
-La noria junto al Támesis tiene vistas de toda la ciudad. Compra la entrada con hora online; al atardecer es cuando más se llena.
+### 5. Palacio Real
+La residencia oficial de los reyes, aunque no vivan en él, tiene más de 3.000 estancias. Se visita una parte: el Salón del Trono, la Real Armería y la Farmacia Real. **Compra la entrada online**; los ciudadanos de la UE tienen entrada gratuita las últimas horas de la tarde de lunes a jueves, pero la cola es larga.
 
-### 6. Tate Modern y el puente del Milenio
-Arte contemporáneo gratis en una antigua central eléctrica. Desde su mirador se ve la cúpula de San Pablo al otro lado del puente.
+![Fachada del Palacio Real de Madrid vista desde los jardines del Campo del Moro](./madrid-palacio-real.jpg)
+*El Palacio Real desde el Campo del Moro, la vista que se pierde casi todo el mundo. Foto: Eduardo Rodriguez (Unsplash)*
 
-### 7. Borough Market
-El mercado gastronómico más famoso de Londres. Ve con hambre a mediodía entre semana; el sábado está a reventar.
+### 6. Catedral de la Almudena y Jardines de Sabatini
+La catedral está justo enfrente del palacio. Desde su cúpula se ve la sierra en días claros. Los jardines de Sabatini, al lado, son el sitio para ver atardecer.
 
-## La City y la Torre
+### 7. Templo de Debod
+Un templo egipcio auténtico, regalo de Egipto a España en los años sesenta. Está en un mirador sobre la Casa de Campo y es el atardecer más famoso de Madrid: llega con tiempo.
 
-### 8. Torre de Londres
-Fortaleza, prisión y hoy casa de las Joyas de la Corona. Haz la visita con uno de los Beefeaters: es gratuita con la entrada y muy divertida.
+## El Paseo del Arte
 
-### 9. Tower Bridge
-El puente levadizo más famoso del mundo. Su pasarela superior tiene un suelo de cristal sobre el río.
+### 8. Museo del Prado
+Velázquez, Goya, El Bosco, Tiziano. Si solo tienes dos horas, céntrate en *Las meninas*, las Pinturas negras de Goya y *El jardín de las delicias*. La entrada es gratuita las dos últimas horas de cada día, pero la cola empieza mucho antes.
 
-![Tower Bridge de Londres visto desde la calzada, con sus dos torres de piedra y estructura azul](./londres-tower-bridge.jpg)
-*Tower Bridge desde la calzada. Si tienes suerte, verás cómo se levanta para dejar pasar un barco. Foto: Lukas Souza (Unsplash)*
+### 9. Museo Reina Sofía
+Arte del siglo XX, con el *Guernica* de Picasso como gran protagonista. También tiene franjas gratuitas por la tarde varios días a la semana.
 
-### 10. Catedral de San Pablo y Sky Garden
-La cúpula de San Pablo tiene una galería con un curioso efecto acústico. Para ver la City desde arriba gratis, reserva el Sky Garden con antelación.
+### 10. Museo Thyssen-Bornemisza
+Completa lo que no tienen los otros dos: impresionismo, expresionismo y pintura americana. Es el más tranquilo de los tres.
 
-## Grandes museos gratuitos
+### 11. Parque del Retiro
+El palacio de Cristal, el estanque grande con sus barcas y el Paseo de las Estatuas. Un domingo por la mañana es el mejor momento para ver a los madrileños en su salsa.
 
-### 11. British Museum
-En Bloomsbury: la piedra Rosetta, los mármoles del Partenón y las momias egipcias. Gratis, aunque se agradece la donación. Ve con un plan: no se puede ver entero en un día.
+### 12. Plaza de Cibeles y Puerta de Alcalá
+El Palacio de Cibeles, hoy ayuntamiento, tiene un mirador en lo alto con vistas a la Gran Vía y al Paseo del Prado. La Puerta de Alcalá está a cinco minutos.
 
-### 12. Museo de Historia Natural
-Ya en South Kensington, el esqueleto de ballena azul del vestíbulo justifica la visita. Ideal si viajas con niños.
+## Gran Vía y barrios con vida
 
-### 13. Victoria and Albert Museum
-Diseño, moda y artes decorativas. Su patio con cafetería es un oasis.
+### 13. Gran Vía
+Edificios de principios del siglo XX, teatros de musicales y tiendas. Para verla desde arriba, sube a una de las terrazas de las azoteas o al Círculo de Bellas Artes.
 
-## Barrios con carácter
+### 14. Malasaña y Chueca
+Calles llenas de bares, tiendas de segunda mano y cafés. Es el Madrid para salir de noche o tomar el vermú del domingo.
 
-### 14. Covent Garden y Soho
-Artistas callejeros, tiendas y teatros. Las entradas de última hora para los musicales del West End se compran en las taquillas de Leicester Square.
+### 15. El Rastro y La Latina
+El Rastro se monta los domingos por la mañana en la Ribera de Curtidores. Después, la costumbre es ir de cañas por la Cava Baja.
 
-### 15. Camden Town
-Mercados, puestos de comida de todo el mundo y ambiente alternativo junto al canal de Regent's.
+## Fuera del centro
 
-### 16. Notting Hill y Portobello Road
-Casas de colores y el mercado de antigüedades de Portobello, que se monta los sábados.
+### 16. Estadio Santiago Bernabéu y Madrid Río
+El tour del Bernabéu necesita reserva con día y hora. Si prefieres aire libre, Madrid Río es un paseo de varios kilómetros junto al Manzanares, perfecto para ir en bici.
 
-> **Consejo práctico**: para entrar en Reino Unido necesitas pasaporte y una autorización electrónica de viaje, la [ETA](https://www.gov.uk/eta), que se tramita online antes de volar. Ya en Londres, no compres billetes sueltos de metro: paga con tu tarjeta o el móvil contactless y el sistema aplica automáticamente el tope diario.
+> **Consejo práctico**: reserva el Palacio Real y el tour del Bernabéu con antelación. Para los museos del Paseo del Arte, decide antes si te compensa ir en la franja gratuita: ahorras la entrada, pero pierdes casi siempre media hora de cola y tienes menos tiempo dentro.
 
 ## Sigue organizando tu viaje
-- [Londres en 3 días](/europa/reino-unido/londres/en-3-dias/)
-- [Dónde comer en Londres bien y barato](/europa/reino-unido/londres/donde-comer/)
-- [Dónde alojarse en Londres](/europa/reino-unido/londres/donde-alojarse/)
-- [Cuándo ir a Londres y consejos prácticos](/europa/reino-unido/londres/cuando-ir/)
-- Vuelve a la [guía completa de Londres](/europa/reino-unido/londres/)
+- [Madrid en 3 días](/espana/madrid/madrid/en-3-dias/)
+- [Dónde comer en Madrid bien y barato](/espana/madrid/madrid/donde-comer/)
+- [Dónde alojarse en Madrid](/espana/madrid/madrid/donde-alojarse/)
+- [Cuándo ir a Madrid y consejos prácticos](/espana/madrid/madrid/cuando-ir/)
+- Vuelve a la [guía completa de Madrid](/espana/madrid/madrid/)
