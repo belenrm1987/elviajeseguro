@@ -1,0 +1,23 @@
+---
+import { hasContent, hueFor, imageFor, type Node } from '../lib/site';
+import Thumb from './Thumb.astro';
+const { node, variant = 'plain', text, label } = Astro.props as { node: Node; variant?: 'plain' | 'dest'; text?: string; label?: string };
+const ready = hasContent(node.url);
+const img = imageFor(node.url);
+---
+{variant === 'dest' ? (
+  <a class="card dest-card" href={node.url} style={`--h:${hueFor(node.name)}`}>
+    {img ? <div class="photo"><Thumb image={img} /><span>{node.name}</span></div> : <div class="band"><span>{node.name}</span></div>}
+    <div class="body">
+      {text && <p>{text}</p>}
+      {ready ? <span class="chip new">Guía disponible</span> : <span class="chip soon">Próximamente</span>}
+    </div>
+  </a>
+) : (
+  <a class="card" href={node.url}>
+    {img && <div class="photo-plain"><Thumb image={img} /></div>}
+    <span class="card-title">{label ?? node.name}</span>
+    {text && <p>{text}</p>}
+    {ready ? <span class="chip new">Leer guía</span> : <span class="chip soon">Próximamente</span>}
+  </a>
+)}

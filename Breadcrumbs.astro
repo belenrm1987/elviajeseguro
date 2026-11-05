@@ -1,0 +1,11 @@
+---
+import type { Node } from '../lib/site';
+const { trail } = Astro.props as { trail: Node[] };
+---
+<nav class="crumbs" aria-label="Ruta de navegación">
+  <ol>
+    {trail.map((n, i) => (
+      <li>{i < trail.length - 1 ? <a href={n.url}>{n.name}</a> : <span aria-current="page">{n.name}</span>}</li>
+    ))}
+  </ol>
+</nav>
