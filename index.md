@@ -1,7 +1,13 @@
 ---
-title: "Rankings de viaje: los lugares más bonitos, con criterio"
-description: "Listas de los pueblos, playas, ciudades e islas más bonitos de España y Europa, con criterio propio y enlaces a la guía de cada destino."
-summary: "Listas de pueblos, playas, ciudades e islas elegidos con criterio. Cada lugar enlaza a su guía para que puedas pasar de la idea al plan."
+title: "Dónde viajar cada mes del año"
+description: "Calendario de viajes: los mejores destinos para viajar cada mes del año, puentes, escapadas de fin de semana y viajes de Navidad."
+summary: "El mismo destino puede ser perfecto o un error según el mes. Aquí tienes, mes a mes, dónde ir con buen tiempo, precios razonables y menos gente."
 ---
 
-En cada ranking explicamos por qué está cada lugar, cuál es la mejor época para ir y cómo llegar. Nada de listas infinitas: solo los sitios que merecen el viaje.
+Para elegir cada destino del calendario tenemos en cuenta tres cosas:
+
+1. **Clima**: temperaturas agradables y lluvias o monzones.
+2. **Temporada**: si hay mucha gente, precios altos o cierres estacionales.
+3. **Lo que pasa ese mes**: fiestas, mercados de Navidad, floraciones, festivales…
+
+Elige el mes que te interesa o consulta los puentes y las escapadas de fin de semana.
