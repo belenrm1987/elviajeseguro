@@ -1,13 +1,13 @@
 ---
-title: "Dónde viajar cada mes del año"
-description: "Calendario de viajes: los mejores destinos para viajar cada mes del año, puentes, escapadas de fin de semana y viajes de Navidad."
-summary: "El mismo destino puede ser perfecto o un error según el mes. Aquí tienes, mes a mes, dónde ir con buen tiempo, precios razonables y menos gente."
+title: "Destinos: guías de viaje por continente y país"
+description: "Todas las guías de viaje de El Viaje Seguro organizadas por continente, país y ciudad: qué ver, itinerarios, dónde comer, dónde alojarse y cuándo ir."
+summary: "Elige continente y país. Cada destino tiene su guía principal y cinco guías prácticas: qué ver, itinerario de 3 días, dónde comer, dónde alojarse y cuándo ir."
 ---
 
-Para elegir cada destino del calendario tenemos en cuenta tres cosas:
+Cada destino de El Viaje Seguro sigue la misma estructura, para que encuentres siempre la información en el mismo sitio:
 
-1. **Clima**: temperaturas agradables y lluvias o monzones.
-2. **Temporada**: si hay mucha gente, precios altos o cierres estacionales.
-3. **Lo que pasa ese mes**: fiestas, mercados de Navidad, floraciones, festivales…
+- **Guía del país**: requisitos de entrada, mejor época, itinerario, qué comer y presupuesto.
+- **Guía de cada ciudad**: el resumen de lo imprescindible, con enlaces a sus guías prácticas.
+- **Guías prácticas**: qué ver, la ciudad en 3 días, dónde comer, dónde alojarse y cuándo ir.
 
-Elige el mes que te interesa o consulta los puentes y las escapadas de fin de semana.
+Los destinos marcados como *Guía disponible* ya tienen su guía completa. El resto se va publicando poco a poco.
